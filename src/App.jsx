@@ -359,7 +359,7 @@ function App() {
                       animate={{ opacity: 1, x: 0 }}
                       exit={{ opacity: 0, x: -100 }}
                       transition={{ duration: 0.3 }}
-                      className="w-[25%] max-w-md"
+                      className="md:w-[25%] lg:w-[25%] sm:w-full max-w-md"
                     >
                       <video
                         className="w-full rounded-md xs:rounded-lg sm:rounded-xl shadow-2xl"
