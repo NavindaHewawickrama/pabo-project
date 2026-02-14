@@ -115,7 +115,7 @@ function App() {
       ))}
 
       {/* Audio Control Button (only show after Yes is clicked) */}
-      {showVideo && (
+      {/* {showVideo && (
         <button
           onClick={toggleAudio}
           className="absolute top-2 sm:top-4 right-2 sm:right-4 z-50 bg-white/40 backdrop-blur-sm text-pink-600 px-2 sm:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm hover:bg-white/60 transition-all shadow-lg"
@@ -123,7 +123,7 @@ function App() {
           {audioPlaying ? '🔊' : '🔇'}
           <span className="hidden xs:inline">{audioPlaying ? ' Mute' : ' Play Music'}</span>
         </button>
-      )}
+      )} */}
 
       {/* Custom Pink Alert Modal */}
       <AnimatePresence>
