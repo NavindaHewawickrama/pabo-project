@@ -15,34 +15,23 @@ function App() {
   const [showAlert, setShowAlert] = useState(false);
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   
-  // All 5 "No" sounds - will play randomly
+
   const noSounds = [sound2, sound3, sound4, sound5, sound2]; // Using 5 sounds
 
-  // Audio refs for different sounds
+
   const perfectSongRef = useRef(null);
   const noSoundRefs = useRef([]);
 
   const videos = [video1, video2, video3];
 
   useEffect(() => {
-    // Don't auto-play, wait for user interaction
   }, []);
 
   const handleYesClick = () => {
-    // Stop all "No" sounds that might be playing
-    // noSoundRefs.current.forEach((audioRef) => {
-    //   if (audioRef) {
-    //     audioRef.pause();
-    //     audioRef.currentTime = 0;
-    //   }
-    // });
+
 
     setShowVideo(true);
-    // Play romantic music
-    // if (perfectSongRef.current) {
-    //   perfectSongRef.current.play().catch(e => console.log("Audio play failed:", e));
-    //   setAudioPlaying(true);
-    // }
+
   };
 
   const handleNoClick = () => {
